@@ -43,6 +43,11 @@ function updatePercentage() {
 	ratio = ((good/(good+bad))*100).toFixed(0);
 	$('#ratio').text(ratio+'%');
 	localStorage["ratio"] = ratio;
+	if (ratio <= 30) {
+		$('#ratio').addClass('inTrouble');
+	} else {
+		$('#ratio').removeClass('inTrouble');
+	}
 }
 
 function updateRatio() {

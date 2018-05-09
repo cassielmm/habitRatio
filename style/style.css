@@ -1,19 +1,25 @@
 body {
-  min-width: 300px; /* your desired width */
-  max-width: 100%;
-  position: relative;
-  vertical-align:middle;
+ 	min-width: 300px; /* your desired width */
+	max-width: 100%;
+	position: relative;
+	vertical-align:middle;
+}
+img {
+	display: block;
+	margin: auto;
 }
 h1 {
-    font-size:100px;
+    font-size: 100px;
     text-align: center;
+    -webkit-margin-before: 64px;
+    -webkit-margin-after: 64px;
 }
 button {
 	font-size: 14px;
 }
 .wrapper {
 	text-align: center;
-	padding: 15px 50px;
+	padding: 10px 50px;
 }
 .num {
 	font-size: 20px;
@@ -49,7 +55,10 @@ button {
 	background-color:#ed4815;
 }
 .littleButton {
-	background-color:#45c797;
+	font-size: 15px;
+	cursor: pointer;
+	font-weight: bold;
+	/*background-color:#45c797;
 	-moz-border-radius:4px;
 	-webkit-border-radius:4px;
 	border-radius:4px;
@@ -63,5 +72,11 @@ button {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #2d824f;
 	position:relative;
-	top:1px;
+	top:1px;*/
+}
+a {
+	color: #45c797;
+}
+.inTrouble {
+	color: #ed4815;
 }
