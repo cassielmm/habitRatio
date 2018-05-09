@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "habitRatio",
+  "description": "Cut down on any bad habit.",
+  "version" : "1",
+  "author" : "Cassiel Moroney",
+  "browser_action": {
+    "default_icon" : "img/icon-128.png",
+    "default_title" : "You got this!"
+  },
+  "icons": {
+    "16": "img/icon-16.png",
+    "48": "img/icon-48.png",
+    "128": "img/icon-128.png"
+  },
+  "browser_action" : {
+    "default_popup" : "popup.html"
+  },
+  "permissions" : [
+    "activeTab",
+    "storage"
+  ]
+}
