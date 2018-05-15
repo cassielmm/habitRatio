@@ -15,17 +15,34 @@
     	<button type="button" class="bigButton" id="giveInButton">Give In</button>
 	  </div>
 
-  	<div class="wrapper">
+  	<div class="wrapper" class="bigspace">
       	<text class="num" id="resistCount"></text>
       	<text class="num" id="giveInCount"></text>
   	</div>
 
   	<div class="wrapper">
-  		<a class="littleButton" id="clear">Reset</a>
+      <a id="options" href="#optionPanel">Options</a> ||
+      <a id="clear">Reset</a> ||
+      <a id="archive">Archive</a>
   	</div>
 
+    <div class="overlay" id="optionPanel">
+      <div class="popup">
+      
+      <a class="close" href="#">&times;</a>
+    
+      <div class="content">
+        <div class="wrapper">
+          <button type="button" class="littleButton" id="percentOpt">Percent</button> 
+          <button type="button" class="littleButton" id="ratioOpt">Ratio</button>
+        </div>
+          <input type="text" id="troubleBox"></text>
+          <button type="button" class="littleButton" id="troubleOpt">Minimum</button>
+        <div align="center">Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+      </div>
 
-    <div align="center">Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+      </div>
+    </div>
 
   </body>
 </html>

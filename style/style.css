@@ -17,14 +17,21 @@ h1 {
 button {
 	font-size: 14px;
 }
+a {
+	color: #45c797;
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+}
 .wrapper {
 	text-align: center;
 	padding: 10px 50px;
+	text-decoration: none;
 }
 .num {
 	font-size: 20px;
 	text-align: center;
-	padding: 25px;
+	margin: 40px;
 }
 /* https://www.bestcssbuttongenerator.com/ */
 .bigButton {
@@ -33,12 +40,12 @@ button {
 	-webkit-border-radius:28px;
 	border-radius:28px;
 	border:1px solid #19a1ab;
-	display:inline-block;
+	display: inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
 	font-size:17px;
-	padding:16px 22px;
+	padding:14px 22px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #2d824f;
 	outline: none;
@@ -55,10 +62,11 @@ button {
 	background-color:#ed4815;
 }
 .littleButton {
-	font-size: 15px;
+	font-size: 24px;
 	cursor: pointer;
 	font-weight: bold;
-	/*background-color:#45c797;
+	text-decoration: none;
+	background-color:#45c797;
 	-moz-border-radius:4px;
 	-webkit-border-radius:4px;
 	border-radius:4px;
@@ -72,11 +80,59 @@ button {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #2d824f;
 	position:relative;
-	top:1px;*/
-}
-a {
-	color: #45c797;
+	top:1px;
 }
 .inTrouble {
 	color: #ed4815;
+}
+#clear {
+	font-size: 20px;
+}
+/* https://codepen.io/imprakash/pen/GgNMXO */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 60%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+.bigspace {
+	margin-bottom: 60px;
+}
+#troubleBox {
+	width: 20px;
 }
